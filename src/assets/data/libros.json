@@ -1,0 +1,64 @@
+{
+  "libros": [
+    {
+      "id": "libro1",
+      "titulo": "1984",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/1984.jpg"
+    },
+    {
+      "id": "libro2",
+      "titulo": "Matar a un ruiseñor",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/ruise%C3%B1or.jpg"
+    },
+    {
+      "id": "libro3",
+      "titulo": "Orgullo y prejuicio",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/orgullo.jpg"
+    },
+    {
+      "id": "libro4",
+      "titulo": "El gran Gatsby",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/gatsby.jpeg"
+    },
+    {
+      "id": "libro5",
+      "titulo": "Moby Dick",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/moby-dick.webp"
+    },
+    {
+      "id": "libro6",
+      "titulo": "Guerra y paz",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/guerra.jpg"
+    },
+    {
+      "id": "libro7",
+      "titulo": "El guardián entre el centeno",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/el_guardian.jpg"
+    },
+    {
+      "id": "libro8",
+      "titulo": "El hobbit",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/hobbit.jpg"
+    },
+    {
+      "id": "libro9",
+      "titulo": "Un mundo feliz",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/mfeliz.jpg"
+    },
+    {
+      "id": "libro10",
+      "titulo": "La Odisea",
+      "imagen_portada": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-libros/odisea.jpg"
+    },
+    {
+      "id": "-Fts_tY",
+      "titulo": "Inglessss",
+      "imagen_portada": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_15.jpg"
+    },
+    {
+      "titulo": "shaco 2",
+      "imagen_portada": "https://th.bing.com/th/id/OIP.Np6273rt5yP9mAUvL0GfDQHaEX?rs=1&pid=ImgDetMain",
+      "id": "X0tdqUx"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "email": "joes95villa@hotmail.com",
+      "password": "$2a$10$77erC9eagfKOUGP1usdD5O/J7PsJt9ZlOO7l5Gz1iO1gUSL8xvDa2",
+      "phone": "0988309055",
+      "name": "JAIME ALEXANDERRRR",
+      "surname": "VILLAGOMEZ COCA"
+    },
+    {
+      "id": 3,
+      "email": "joes96villa@hotmail.com",
+      "password": "$2a$10$MsfsgCFPpE20J5kx633vp.56Amo/4mcovylajAvSN9A7x5geKsFJK",
+      "phone": "0988309055",
+      "name": "ERIKA",
+      "surname": "ESPIN"
+    }
+  ]
+}

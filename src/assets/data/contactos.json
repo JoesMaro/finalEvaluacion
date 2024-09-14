@@ -1,0 +1,9 @@
+{
+    "contacto": {
+      "nombre": "John Doe",
+      "email": "johndoe@example.com",
+      "mensaje": "Este es el mensaje del formulario de contacto.",
+      "telefono": "123-456-7890"
+    }
+  }
+  

@@ -1,0 +1,60 @@
+/* Contenedor para organizar las cartas en una cuadrícula */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta automáticamente el número de columnas */
+  gap: 20px; /* Espacio entre las cartas */
+  padding: 20px;
+}
+
+/* Estilo para cada carta */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Imagen en la parte superior */
+.card-img-top {
+  height: 200px; /* Altura fija para la imagen */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Título del libro */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Efecto hover para agrandar ligeramente la tarjeta */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste para dispositivos móviles */
+  }
+}

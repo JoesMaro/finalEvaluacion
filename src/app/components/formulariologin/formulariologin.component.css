@@ -1,0 +1,12 @@
+form {
+    background-color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

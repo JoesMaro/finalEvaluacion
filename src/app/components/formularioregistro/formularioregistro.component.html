@@ -1,0 +1,64 @@
+<!-- Contenedor del formulario -->
+<div class="container mt-4">
+  <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+
+    <div class="form-group mb-3">
+      <label for="name">Nombre</label>
+      <input id="name" type="text" name="name" [(ngModel)]="name" class="form-control" placeholder="Nombre" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="surname">Apellido</label>
+      <input id="surname" type="text" name="surname" [(ngModel)]="surname" class="form-control" placeholder="Apellido" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="phone">Teléfono</label>
+      <input id="phone" type="tel" name="phone" [(ngModel)]="phone" class="form-control" placeholder="Número de teléfono" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" name="email" [(ngModel)]="email" class="form-control" placeholder="correo@ejemplo.com" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="password">Contraseña</label>
+      <input id="password" type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Contraseña" required>
+    </div>
+
+    <button class="btn btn-primary w-100" type="submit">Guardar</button>
+  </form>
+</div>
+
+<!-- Contenedor para la tabla -->
+<div class="container mt-4">
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo Electrónico</th>
+          <th>Teléfono</th>
+          <th>Acciones</th> <!-- Nueva columna para acciones -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of usuarios">
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.surname}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.phone}}</td>
+          <td>
+            <!-- Botones de Editar y Eliminar -->
+            <button class="btn btn-danger btn-sm" (click)="eliminar(user.id)">Eliminar</button>
+            <button class="btn btn-warning btn-sm" (click)="editar(user)">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<!-- Contenedor del formulario -->
+<div class="container mt-4">
+  <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+    <div class="form-group mb-3">
+      <label for="titulo">Título</label>
+      <input id="titulo" type="text" name="titulo" [(ngModel)]="titulo" class="form-control" placeholder="Título del libro" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="imagen_portada">URL de Imagen</label>
+      <input id="imagen_portada" type="text" name="imagen_portada" [(ngModel)]="imagen_portada" class="form-control" placeholder="URL de la imagen del libro" required>
+    </div>
+
+    <button class="btn btn-primary w-100" type="submit">Guardar</button>
+  </form>
+</div>
+
+<!-- Contenedor para la tabla -->
+<div class="container mt-4">
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Imagen</th>
+          <th>Acciones</th> <!-- Columna para acciones -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let libro of libros">
+          <td>{{ libro.id }}</td>
+          <td>{{ libro.titulo }}</td>
+          <td><img [src]="libro.imagen_portada" alt="{{ libro.titulo }}" style="width: 50px; height: auto;"></td>
+          <td>
+            <!-- Botones de Editar y Eliminar -->
+            <button class="btn btn-danger btn-sm" (click)="eliminar(libro.id)">Eliminar</button>
+            <button class="btn btn-warning btn-sm" (click)="editar(libro)">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

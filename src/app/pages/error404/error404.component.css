@@ -1,0 +1,50 @@
+/* CSS para el estilo del mensaje de error */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .error-container {
+    max-width: 600px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .error-container h1 {
+    font-size: 4rem;
+    color: #dc3545;
+    margin-bottom: 20px;
+  }
+  
+  .error-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .error-container p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .btn-home {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-home:hover {
+    background-color: #0056b3;
+  }
+  

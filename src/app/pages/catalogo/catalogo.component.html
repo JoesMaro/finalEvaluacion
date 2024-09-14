@@ -1,0 +1,8 @@
+<div class="cards-container">
+  <div *ngFor="let libro of libros" class="card">
+    <img [src]="libro.imagen_portada" class="card-img-top" alt="{{ libro.titulo }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ libro.titulo }}</h5>
+    </div>
+  </div>
+</div>
